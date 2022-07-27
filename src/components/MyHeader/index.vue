@@ -97,9 +97,9 @@ export default {
   justify-content: center;
   --step: 60s;
   font-family: Consolas, Monaco, monospace;
-  font-size: 1rem;
+  font-size: 16px;
   .date {
-    margin-right: 0.5rem;
+    margin-right: 8px;
   }
 }
 .split {
@@ -150,8 +150,8 @@ export default {
 }
 
 .topp {
-  top: 0.625rem;
-  left: 1.875rem;
+  top: 10px;
+  left: 30px;
   display: inline-block;
   text-align: left !important;
   border-radius: 50%;
@@ -169,14 +169,14 @@ img {
 .top {
   font-family: "仿宋";
   font-weight: 900;
-  font-size: 1.875rem;
+  font-size: 30px;
   text-shadow: 10px 0px 5px #000000;
   display: inline-block;
   color: rgb(0, 0, 0);
 }
 .z_time {
   display: inline-block;
-  right: 1.875rem;
+  right: 30px;
   position: absolute;
   color: #000000;
   font-family: "仿宋";

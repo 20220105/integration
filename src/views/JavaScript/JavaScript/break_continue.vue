@@ -20,7 +20,12 @@
             document.write(' &lt;br /&gt;')
         }
     &lt;/script&gt;
-
+  </code>
+  </pre>
+    </div>
+    <div v-highlight class="center">
+      <pre>
+    <code >
     continue：
 
         &lt;script&gt;
@@ -50,32 +55,5 @@
 <script>
 </script>
 <style scoped>
-.center {
-  margin: auto;
-  opacity: 1;
-font-size: 16px;
-}
-.JavaScript {
-  opacity: 0.9;
-  background-color: rgba(255, 255, 255, 0.83);
-  height: 35.3rem;
-  width: 70rem;
-  margin-left: 1.5rem;
-  border-radius: 1rem;
-  font-weight: 900;
-  text-align: left;
-  padding-left: 1.875rem;
-  color: black;
-  font-weight: 900;
-  flex-wrap: wrap;
-  margin: auto;
-  margin-top: 1rem;
-  display: flex;
-  background-attachment: fixed;
-  overflow-y:scroll ;
-}
-/* 隐藏滚动条 */
-.JavaScript::-webkit-scrollbar {
-  display: none;
-}
+@import url('@/assets/js.css');
 </style>

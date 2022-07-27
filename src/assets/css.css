@@ -1,5 +1,5 @@
 td {
-  min-width: 5rem;
+  min-width: 80px;
 }
 .top {
   margin: auto;
@@ -11,19 +11,21 @@ table {
 .box {
   opacity: 0.9;
   background-color: rgba(255, 255, 255, 0.83);
-  min-height: 35.3rem;
-  max-width: 70rem;
-  margin-left: 1.5rem;
-  border-radius: 1rem;
+  min-height: 564.8px;
+  max-width: 1120px;
+  margin-left: 24px;
+  border-radius: 16px;
   font-weight: 900;
   text-align: center;
-  padding-left: 1.875rem;
+  padding-left:30px;
   color: black;
   font-weight: 900;
   font-family: "仿宋";
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 16px;
   display: flex;
+  font-size:20px;
+
 }
 .left {
   text-align: left;

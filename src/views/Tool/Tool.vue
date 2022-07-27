@@ -94,17 +94,17 @@ export default {
 </script>
 <style scoped>
 .nalaibani > a > button {
-  height: 1.875rem;
-  width: 7.125rem;
+  height: 30px;
+  width: 114px;
   background-color: black;
   color: aliceblue;
-  border-radius: 0.625rem;
+  border-radius: 10px;
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 24px;
 }
 .nalaibani {
   border-top: 3px dashed rgb(255, 105, 105);
-  margin-top: 0.5rem;
+  margin-top: 8px;
 }
 .Aimg {
   margin: 0;
@@ -116,9 +116,9 @@ export default {
 }
 .explain {
   border-top: 3px solid rgb(191, 191, 191);
-  font-size: 0.75rem;
+  font-size: 12px;
   padding: 2px;
-  height: 3.25rem;
+  height: 52px;
   text-align: center;
 }
 .Aimg > img {
@@ -131,21 +131,21 @@ export default {
 .casea {
   border: 5px solid rgba(255, 60, 60, 0.703);
   border-radius: 5px 5px 30px 30px;
-  width: 13.25rem;
-  height: 13.25rem;
+  width: 212px;
+  height: 212px;
   background-color: rgb(255, 255, 255);
   opacity: 0.9;
-  margin-left: 2rem;
-  margin-bottom: 3rem;
+  margin-left: 32px;
+  margin-bottom: 48px;
 }
 .Box {
   display: flex;
-  padding: 1.875rem;
+  padding: 30px;
   color: black;
   flex-wrap: wrap;
   position: fixed;
-  height: 30rem;
-  width: 81rem;
+  height: 480px;
+  width:1286px;
   background-attachment: fixed;
   /* 开启滚动 */
   overflow-y: scroll;

@@ -33,9 +33,6 @@
       ><el-menu-item index="/React">
         <i class="el-icon-cherry"></i>
         <span slot="title">React</span> </el-menu-item
-      ><el-menu-item index="/Interview">
-        <i class="el-icon-monitor"></i>
-        <span slot="title">Achievement</span> </el-menu-item
       ><el-menu-item index="/Tool">
         <i class="el-icon-coffee-cup"></i>
         <span slot="title">Tool</span>
@@ -44,15 +41,17 @@
         <i class="el-icon-s-cooperation"></i>
         <span slot="title">Methods</span>
       </el-menu-item>
+      <el-menu-item index="/Interview">
+        <i class="el-icon-service"></i>
+        <span slot="title">Music</span>
+      </el-menu-item>
     </el-menu>
-    
   </div>
 </template>
 <script>
 export default {
   data() {
-    return {
-    };
+    return {};
   },
   methods: {
     handleOpen(key, keyPath) {
@@ -65,8 +64,8 @@ export default {
 };
 </script>
 <style scoped>
- .aaa /deep/ {
-  border-radius:50%  !important;
+.aaa /deep/ {
+  border-radius: 50% !important;
 }
 .tac {
   background-color: aliceblue;

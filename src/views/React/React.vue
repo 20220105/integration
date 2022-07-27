@@ -36,20 +36,20 @@ export default {
 
 /* 按钮 */
 .bottona {
-  padding-top: 2rem;
-  margin-bottom: -2rem;
+  padding-top: 32px;
+  margin-bottom: -32px;
 }
 .btns {
-  padding: 0.4375rem 0.9375rem;
+  padding: 7px 15px;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  font-size: 1rem;
+  font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
   background: linear-gradient(90deg,#0084ff, #ff9625, #fbff12,  #213cea);
   background-size: 400%;
-  border-radius: 0.3125rem;
+  border-radius: 5px;
   border: 3px solid rgb(3, 226, 255);
 }
 .btns > a {

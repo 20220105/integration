@@ -1,69 +1,53 @@
 <template>
-  <div class="shi">
-    <div  class="yang"  v-for="item in titele" :key="item.name">
-    <router-link  :to="item.href" class="aname">{{item.name}}</router-link>
- 
+  <div class="JavaScript">
+    <div v-highlight class="center">
+      <pre>
+    <code >
+    //  逻辑运算符号  非！  与&&  或||
+        // 如果对非布尔值进行元素转换，回先转为布尔值，然后取反
+        // 两次取反转为布尔值
+        // !
+        var a = true;
+        a = !!a;
+        console.log(a);
+
+        //  &&
+        // 只要有一个false是时候返回false 
+        // 全为true时候true
+        // 如果都为true则返回最后的 如果都为false则返回前的
+        var result = false && false;
+
+        console.log(result);
+        //  ||
+        // 只要有一个true就是true
+        // 都为false就是false
+        // 如果第一个为ture就返回true
+        // 如果都为false则返回最后一个
+        var dd = true || false;
+        console.log(dd)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </code>
+  </pre>
     </div>
+ 
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      titele: [
-        {
-          name: 'script',
-          href: "/a",
-        },
-          {
-          name: '数据类型',
-          href: "/body",
-        }, {
-          name: '进制',
-          href: "/audio",
-        }, {
-          name: '类型转换',
-          href: "/br",
-        }, {
-          name: '运算操作符',
-          href: "/button",
-        }, {
-          name: '自增自减',
-          href: "/div",
-        }, {
-          name: 'unicode编码',
-          href: "/em",
-        }, {
-          name: '代码块',
-          href: "/footer",
-        }, {
-          name: '循环',
-          href: "/h",
-        }, {
-          name: '九九乘法表',
-          href: "/header",
-        }, {
-          name: '函数',
-          href: "/img",
-        }, {
-          name: '对象',
-          href: "/input",
-        }, {
-          name: 'this指向',
-          href: "/ol",
-        }, {
-          name: '工厂模式',
-          href: "/p",
-        }, {
-          name: '原型',
-          href: "/select",
-        }, 
-      ],
-    };
-  },
-};
 </script>
-
 <style scoped>
-@import url('@/assets/threetao.css');
+@import url('@/assets/js.css');
 </style>

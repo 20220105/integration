@@ -61,8 +61,8 @@ export default {
 
 <style scoped>
 .ui {
-  border-bottom: 0.1875rem solid rgb(141, 138, 138);
-  padding: 0.625rem 0.3125rem;
+  border-bottom: 3px solid rgb(141, 138, 138);
+  padding: 10px 5px;
   border-radius: 7px 7px 0px 0px;
   font-weight: 900;
   margin-bottom: 0;
@@ -72,19 +72,19 @@ export default {
   color: rgb(255, 255, 255);
 }
 .case {
-  border: 0.1875rem solid rgb(255, 238, 0);
-  border-radius: 0.625rem;
+  border: 3px solid rgb(255, 238, 0);
+  border-radius: 10px;
   padding: 0;
-  margin-left: 3.25rem;
-  margin-top: 1.875rem;
+  margin-left: 52px;
+  margin-top: 30px;
 }
 .picture {
-  width: 7.25rem;
-  height: 4.375rem;
+  width: 116px;
+  height: 70px;
 }
 img {
-  width: 7.25rem;
-  height: 5.375rem;
+  width: 116px;
+  height: 86px;
   border-radius: 0;
   margin: 0;
   border-radius: 0px 0px 7px 7px;
@@ -95,6 +95,6 @@ a {
 
 .hezi {
   display: flex;
-  padding: 1.875rem;
+  padding: 30px;
 }
 </style>

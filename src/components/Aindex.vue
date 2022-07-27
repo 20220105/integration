@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fiex">
     <div class="top_text">
       Hello, Welcome to my notebook ！
 
@@ -29,35 +29,43 @@ export default {
 };
 </script>
 <style scoped>
+.fiex{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  margin: 0;
+}
 .Contact_me {
   display: inline-block;
   position: absolute;
   right: 0;
   top: 0;
   padding: 0;
-  margin-top: -1rem;
-  margin-right: 0rem;
+  margin-top: -16px;
+  margin-right: 0;
   border-radius: 0;
-  width: 10.125rem;
-  height: 10.125rem;
+  width: 162px;
+  height: 162px;
 }
 .Contact_me > img {
-  width: 10.125rem;
-  height: 10.125rem;
-  margin-right: -1rem;
+ width: 162px;
+  height: 162px;
+  margin-right: -16px;
 }
 .backg {
   margin-top: 10%;
-  margin-left: 45%;
-  width: 12.725rem;
-  height: 12.725rem;
+  margin-left: 43.5%;
+  width: 203.6px;
+  height: 203.6px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 50%;
   background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 .top_text {
-  padding: 1rem;
-  font-size: 1.5625rem;
+  padding: 16px;
+  font-size: 25px;
   font-weight: 900;
 }
 .where {
@@ -68,25 +76,25 @@ export default {
   text-decoration: none;
   color: rgb(0, 255, 21);
   border: 5px solid rgb(255, 137, 137);
-  padding: 1.5rem 2.5rem;
-  border-radius: 0.625rem;
+  padding: 24px 40px;
+  border-radius: 10px;
   font-weight: 900;
   text-align: center;
 }
 .portrait {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  width: 10.725rem;
-  height: 10.725rem;
+  margin-top: 16px;
+  margin-left: 16px;
+  width: 171.6px;
+  height: 171.6px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
 }
 .portrait>img {
   display: inline-block;
   text-align: center;
-  margin-top: 1.5rem;
-  width: 10.725rem;
-  height: 7.725rem;
+  margin-top: 24px;
+  width: 171.6px;
+  height: 123.6px;
   border-radius: 50%;
 }
 </style>

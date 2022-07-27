@@ -1,69 +1,49 @@
 <template>
-  <div class="shi">
-    <div  class="yang"  v-for="item in titele" :key="item.name">
-    <router-link  :to="item.href" class="aname">{{item.name}}</router-link>
- 
+  <div class="JavaScript">
+    <div v-highlight class="center">
+      <pre>
+    <code >
+    // 条件运算符 ？语句 1 ： 语句 2
+    // 如果表达式非布尔值会转换为布尔值
+    var a = 10;
+    b = 20;
+    c=100;
+    a > b ? alert('小于') : alert('大于')
+            
+    max= a > b ? a : b 
+    console.log('max=' +max)
+    max= max >c ? max :c 
+    console.log('max=' + max) 
+    // 套三元
+    max = a >  b ? a > c ? a : c :b > c ? b : c
+    console.log(12,max)
+   max = a >  b ? (a > c ? a : c) :(b > c ?b : c)
+    console.log('1231',max)
+    // 逻辑与
+    max = a > b && a>c ? a :  b>a && b>c ? b : c
+    console.log('逻辑与',max)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </code>
+  </pre>
     </div>
+ 
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      titele: [
-        {
-          name: 'script',
-          href: "/a",
-        },
-          {
-          name: '数据类型',
-          href: "/body",
-        }, {
-          name: '进制',
-          href: "/audio",
-        }, {
-          name: '类型转换',
-          href: "/br",
-        }, {
-          name: '运算操作符',
-          href: "/button",
-        }, {
-          name: '自增自减',
-          href: "/div",
-        }, {
-          name: 'unicode编码',
-          href: "/em",
-        }, {
-          name: '代码块',
-          href: "/footer",
-        }, {
-          name: '循环',
-          href: "/h",
-        }, {
-          name: '九九乘法表',
-          href: "/header",
-        }, {
-          name: '函数',
-          href: "/img",
-        }, {
-          name: '对象',
-          href: "/input",
-        }, {
-          name: 'this指向',
-          href: "/ol",
-        }, {
-          name: '工厂模式',
-          href: "/p",
-        }, {
-          name: '原型',
-          href: "/select",
-        }, 
-      ],
-    };
-  },
-};
 </script>
-
 <style scoped>
-@import url('@/assets/threetao.css');
+@import url('@/assets/js.css');
 </style>

@@ -1,69 +1,42 @@
 <template>
-  <div class="shi">
-    <div  class="yang"  v-for="item in titele" :key="item.name">
-    <router-link  :to="item.href" class="aname">{{item.name}}</router-link>
- 
+  <div class="JavaScript">
+    <div v-highlight class="center">
+      <pre>
+    <code >
+        // 相等运算符用来比较值是否相等
+        //  =  一个是赋值
+        //  != 不相等
+        //  == 判断两个值是否相等 不能有空格
+        //  undefined衍生自null
+        // ===不会做类型转换
+        // ！==不全等
+        console.log(undefined == null)
+        // NAN不和任何值相等
+        console.log(NaN == NaN)
+        // 判断是不是NaN
+        isNaN();
+        //  null不等于0
+        console.log(null == 0)
+        
+        
+        // 对于非数值转换时先转换在比较
+        // 任何值和NAN比较时候都是false
+        var a=10>5;
+        console.log(a)
+        aa =true>false;
+        console.log(aa);
+        // 两个字符串比较时候比较的事字符串编码
+        ss= "a" > "b";
+        console.log(ss)
+
+  </code>
+  </pre>
     </div>
+ 
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      titele: [
-        {
-          name: 'script',
-          href: "/a",
-        },
-          {
-          name: '数据类型',
-          href: "/body",
-        }, {
-          name: '进制',
-          href: "/audio",
-        }, {
-          name: '类型转换',
-          href: "/br",
-        }, {
-          name: '运算操作符',
-          href: "/button",
-        }, {
-          name: '自增自减',
-          href: "/div",
-        }, {
-          name: 'unicode编码',
-          href: "/em",
-        }, {
-          name: '代码块',
-          href: "/footer",
-        }, {
-          name: '循环',
-          href: "/h",
-        }, {
-          name: '九九乘法表',
-          href: "/header",
-        }, {
-          name: '函数',
-          href: "/img",
-        }, {
-          name: '对象',
-          href: "/input",
-        }, {
-          name: 'this指向',
-          href: "/ol",
-        }, {
-          name: '工厂模式',
-          href: "/p",
-        }, {
-          name: '原型',
-          href: "/select",
-        }, 
-      ],
-    };
-  },
-};
 </script>
-
 <style scoped>
-@import url('@/assets/threetao.css');
+@import url('@/assets/js.css');
 </style>

@@ -14,16 +14,36 @@ import MyNavber from "../components/MyNavber/index.vue";
 // import MyRight from "../components/MyRight/index.vue";
 
 export default {
-  components: { MyHeader, MyMain, MyNavber,  },
-  data() {
-    return {};
+  components: { MyHeader, MyMain, MyNavber },
+  created() {
+    // 获取当前设备的宽度，设置rem的根字体大小
+    let width = window.innerWidth;
+    width = width <= 1200 ? 1200 : width;
+    const htmlObj = document.getElementsByTagName("html")[0];
+    htmlObj.style.fontSize = width / 76.8 + "px";
+
+    // 对resize事件进行浏览器兼容处理
+    if (document.createEvent) {
+      var event = document.createEvent("HTMLEvents");
+      event.initEvent("resize", true, true);
+      window.dispatchEvent(event);
+    } else if (document.createEventObject) {
+      window.fireEvent("onresize");
+    }
+
+    // 监听页面resize事件，重新设置rem的根字体大小
+    window.onresize = function () {
+      let width = window.innerWidth;
+      width = width <= 1200 ? 1200 : width;
+      htmlObj.style.fontSize = width / 76.8 + "px";
+    };
   },
 };
 </script>
 
 <!-- scoped 只对当前页面生效 -->
 <style scoped>
-body{
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -38,34 +58,37 @@ body{
   );
   width: 100%;
   height: 100%;
-  min-height: 44.525rem;
-  margin-bottom: -1rem;
- 
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
 }
 
 .MyHeader {
   position: absolute;
   color: rgb(180, 122, 47);
   text-align: center;
-  top: 1rem;
+  top: 16px;
   left: 0;
   right: 0;
-  height: 4.375rem;
-  font-size: 1.25rem;
-  line-height: 4.375rem;
+  height: 70px;
+  font-size: 20px;
+  line-height: 70px;
 }
 .MyNavber {
-  top: 6.375rem;
+  top: 102px;
   left: 0;
   bottom: 0;
-  width: 9.1875rem;
+  width: 147px;
   position: absolute;
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 .MyMain {
-  top: 5.375rem;
-  left: 9.1875rem;
+  top: 86px;
+  left: 147px;
   bottom: 0;
   right: 0;
   position: absolute;
@@ -73,5 +96,4 @@ body{
   text-align: center;
   margin: 0;
 }
-
 </style>

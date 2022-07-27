@@ -1,69 +1,61 @@
 <template>
-  <div class="shi">
-    <div  class="yang"  v-for="item in titele" :key="item.name">
-    <router-link  :to="item.href" class="aname">{{item.name}}</router-link>
+  <div class="JavaScript">
+    <div v-highlight class="center">
+      <pre>
+    <code >
+
+强制数据类型转换
+
+
+（1）转字符串：tostring()
+var a=123;
+console.log(typeof(a),a);
  
+var b= a.toString();
+console.log(typeof(b),b);
+
+var c = 123;
+ console.log(typeof(c),c);
+ var  c= String(c);
+ console.log(typeof(c),c);
+复制代码
+该方法不会影响原变量但对于null 和undefined无效，可以使用string()方法。
+（2）转number ：number()函数
+如果是纯数字 转为数字
+如果是非数值内容  转为NAN
+如果是空 或者是空格字符串直接为0
+undefined转数字是NAN
+true 0  false 0
+var aa = '';
+console.log(typeof(aa),aa );
+var bb = Number(aa);
+console.log(typeof(bb),bb );
+复制代码
+（3）布尔值:Boolean()
+除了0和NAN都是true
+除了空串都是true
+undefined false
+obect true
+
+
+
+
+
+
+
+
+
+
+
+
+  </code>
+  </pre>
     </div>
+ 
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      titele: [
-        {
-          name: 'script',
-          href: "/a",
-        },
-          {
-          name: '数据类型',
-          href: "/body",
-        }, {
-          name: '进制',
-          href: "/audio",
-        }, {
-          name: '类型转换',
-          href: "/br",
-        }, {
-          name: '运算操作符',
-          href: "/button",
-        }, {
-          name: '自增自减',
-          href: "/div",
-        }, {
-          name: 'unicode编码',
-          href: "/em",
-        }, {
-          name: '代码块',
-          href: "/footer",
-        }, {
-          name: '循环',
-          href: "/h",
-        }, {
-          name: '九九乘法表',
-          href: "/header",
-        }, {
-          name: '函数',
-          href: "/img",
-        }, {
-          name: '对象',
-          href: "/input",
-        }, {
-          name: 'this指向',
-          href: "/ol",
-        }, {
-          name: '工厂模式',
-          href: "/p",
-        }, {
-          name: '原型',
-          href: "/select",
-        }, 
-      ],
-    };
-  },
-};
 </script>
-
 <style scoped>
-@import url('@/assets/threetao.css');
+@import url('@/assets/js.css');
 </style>

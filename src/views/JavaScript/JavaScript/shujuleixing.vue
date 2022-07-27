@@ -1,69 +1,76 @@
 <template>
-  <div class="shi">
-    <div  class="yang"  v-for="item in titele" :key="item.name">
-    <router-link  :to="item.href" class="aname">{{item.name}}</router-link>
- 
+  <div class="JavaScript">
+    <div v-highlight class="center">
+      <pre>
+    <code >
+引用数据类型：object。
+
+基本数据类型：
+
+（1）number 数字
+
+（2）string 字符串
+
+（3）null 空
+
+（4） undefined 未定义
+
+（5）boolean 布尔值
+
+
+
+
+  //    基本数据数据类型都在栈内存中存储
+        // 值与值之间独立存在
+
+
+        // 对象保存在堆内存中
+        // 每创一个一个新的对象就会在堆中开辟一个新的空间
+        // 对象保存的是值在堆内的地址
+        // 新对象指向的也是地址
+        // 相当当于多人看电视 一个人换台其他人也跟着看其他的电视台
+
+    //    基本数据类型比较的是值 引用数据类型比较的是对象的内存地址
+        // 新创建俩对象  == 时候 false 值得地址不一样
+
+        let a = new Object();
+        a.name = '齐天大圣';
+        a.age = '100';
+        a.sex = "雄性";
+        let b = a;
+        console.log(b==a)
+        console.log(a);
+        b.name = '猪八戒'
+        console.log(b);
+        // 新对象改变 原值也改变 
+        console.log(a);
+        delete b.name;
+        console.log(b);
+        console.log(a)
+
+        b = null;
+        console.log(b);
+        console.log(a)
+
+
+
+
+
+
+
+
+
+
+
+
+  </code>
+  </pre>
     </div>
+ 
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      titele: [
-        {
-          name: 'script',
-          href: "/a",
-        },
-          {
-          name: '数据类型',
-          href: "/body",
-        }, {
-          name: '进制',
-          href: "/audio",
-        }, {
-          name: '类型转换',
-          href: "/br",
-        }, {
-          name: '运算操作符',
-          href: "/button",
-        }, {
-          name: '自增自减',
-          href: "/div",
-        }, {
-          name: 'unicode编码',
-          href: "/em",
-        }, {
-          name: '代码块',
-          href: "/footer",
-        }, {
-          name: '循环',
-          href: "/h",
-        }, {
-          name: '九九乘法表',
-          href: "/header",
-        }, {
-          name: '函数',
-          href: "/img",
-        }, {
-          name: '对象',
-          href: "/input",
-        }, {
-          name: 'this指向',
-          href: "/ol",
-        }, {
-          name: '工厂模式',
-          href: "/p",
-        }, {
-          name: '原型',
-          href: "/select",
-        }, 
-      ],
-    };
-  },
-};
 </script>
-
 <style scoped>
-@import url('@/assets/threetao.css');
+@import url('@/assets/js.css');
 </style>

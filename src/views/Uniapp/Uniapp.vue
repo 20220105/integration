@@ -39,20 +39,20 @@ export default {
 @import url('@/assets/threetao.css');
 /* 按钮 */
 .bottona {
-  padding-top: 2rem;
-  margin-bottom: -2rem;
+  padding-top: 32px;
+  margin-bottom: -32px;
 }
 .btns {
-  padding: 0.4375rem 0.9375rem;
+  padding: 7px 15px;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  font-size: 1rem;
+  font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
   background: linear-gradient(90deg, #21ea25, #f6ff00, #f8e645, #21ea25);
   background-size: 400%;
-  border-radius: 0.3125rem;
+  border-radius: 5px;
   border: 3px solid rgb(251, 36, 193);
 }
 .btns > a {
