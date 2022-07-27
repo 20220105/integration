@@ -1,0 +1,30 @@
+td {
+  min-width: 5rem;
+}
+.top {
+  margin: auto;
+}
+table {
+  text-align: center;
+  background-color: aliceblue;
+}
+.box {
+  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.83);
+  min-height: 35.3rem;
+  max-width: 70rem;
+  margin-left: 1.5rem;
+  border-radius: 1rem;
+  font-weight: 900;
+  text-align: center;
+  padding-left: 1.875rem;
+  color: black;
+  font-weight: 900;
+  font-family: "仿宋";
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+}
+.left {
+  text-align: left;
+}

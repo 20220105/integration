@@ -1,0 +1,25 @@
+.aname {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+  }
+  .shi {
+    display: flex;
+    padding: 1.25rem;
+    color: black;
+    /* 自动换行 */
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .yang {
+    border: 3px solid rgb(254, 254, 254);
+    margin: 0.625rem;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    height: 1.6875rem;
+    line-height: 1.6875rem;
+  }
+  .yang:hover {
+    background-color: #fbfbfb;
+  }

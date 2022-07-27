@@ -1,0 +1,48 @@
+
+div{
+  margin-bottom:1rem ;
+}
+
+.three > div > div {
+  margin: 0.625rem;
+}
+.three > div {
+  margin-top: 20px;
+  padding-left: 50px;
+}
+.text {
+  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.83);
+  min-height: 35.3rem;
+  max-width: 70rem;
+  margin-left: 1.5rem;
+  border-radius: 1rem;
+  font-weight: 900;
+  padding-left: 1.875rem;
+  margin: auto;
+margin-top: 1rem;
+display: flex;
+}
+.one {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  display: block;
+  margin-bottom:1rem ;
+}
+.text > div {
+  text-align: left;
+  margin-left: 1.875rem;
+  padding-top: 1.875rem;
+}
+.fiew {
+margin-top: 5rem;
+width: 100%;
+text-align: center;
+margin-left:17rem ;
+}
+.fiew > a > button {
+  border: 3px solid rgb(255, 165, 165);
+  border-radius: 0.625rem;
+  height: 2.875rem;
+  background-color: rgb(255, 232, 102);
+}
