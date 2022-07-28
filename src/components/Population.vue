@@ -4,17 +4,19 @@
     <MyNavber class="MyNavber"></MyNavber>
     <MyMain class="MyMain"></MyMain>
     <!-- <MyRight></MyRight> -->
+
   </div>
 </template>
 
 <script>
+import Audio from '@/views/HTML/htmlpages/audio.vue';
 import MyHeader from "../components/MyHeader/index.vue";
 import MyMain from "../components/MyMain/index.vue";
 import MyNavber from "../components/MyNavber/index.vue";
 // import MyRight from "../components/MyRight/index.vue";
 
 export default {
-  components: { MyHeader, MyMain, MyNavber },
+  components: { MyHeader, MyMain, MyNavber, Audio },
   created() {
     // 获取当前设备的宽度，设置rem的根字体大小
     let width = window.innerWidth;
@@ -51,10 +53,10 @@ body {
 .app {
   background-image: linear-gradient(
     to top,
-    #75a5ff 0%,
-    #5f97ff 1%,
+    #89b1fb 0%,
+    #689dff 1%,
     #ffffff 20%,
-    #ff9fa7 80%
+    #ff8c96 80%
   );
   width: 100%;
   height: 100%;

@@ -83,8 +83,8 @@ export default {
         },
         {
           src: "https://img2.baidu.com/it/u=460591639,1103488215&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=407",
-          href: "https://www.fenxianglu.cn/highlight.html",
-          title: "页面输出代码",
+          href: "https://highlightjs.org/",
+          title: "Highlight",
           explain: "向页面输出高亮代码块，像掘金/csdn那样",
         },
       ],
@@ -104,7 +104,7 @@ export default {
 }
 .nalaibani {
   border-top: 3px dashed rgb(255, 105, 105);
-  margin-top: 8px;
+  /* margin-top: 8px; */
 }
 .Aimg {
   margin: 0;
@@ -127,6 +127,7 @@ export default {
 }
 .topaa {
   display: flex;
+  height: 120px;
 }
 .casea {
   border: 5px solid rgba(255, 60, 60, 0.703);
@@ -145,7 +146,7 @@ export default {
   flex-wrap: wrap;
   position: fixed;
   height: 480px;
-  width:1286px;
+  width:1270px;
   background-attachment: fixed;
   /* 开启滚动 */
   overflow-y: scroll;

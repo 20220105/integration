@@ -60,6 +60,10 @@ export default {
 </script>
 
 <style scoped>
+/* 指定选择器 */
+img:nth-child(0){
+  width: 119px;
+}
 .ui {
   border-bottom: 3px solid rgb(141, 138, 138);
   padding: 10px 5px;
